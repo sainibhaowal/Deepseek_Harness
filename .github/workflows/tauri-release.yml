@@ -87,7 +87,7 @@ jobs:
           releaseBody: 'Official DeepSeek Harness desktop build (.deb for Debian/Ubuntu and .exe setup for Windows) powered by Tauri 2.0, Rust, and React.'
           releaseDraft: false
           prerelease: false
-          args: ${{ matrix.args }}
+          args: ${{ matrix.args }} --verbose
 
       - name: Upload Artifacts (Linux)
         if: matrix.platform == 'ubuntu-22.04'

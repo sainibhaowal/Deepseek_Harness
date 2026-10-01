@@ -38,21 +38,23 @@
     "category": "DeveloperTool",
     "shortDescription": "DeepSeek Harness Desktop Workbench",
     "longDescription": "High-performance desktop application for DeepSeek Harness built with Tauri 2.0, Rust, and React.",
-    "deb": {
-      "depends": [
-        "libwebkit2gtk-4.1-0 | libwebkit2gtk-4.0-37",
-        "libgtk-3-0"
-      ]
+    "linux": {
+      "deb": {
+        "depends": [
+          "libwebkit2gtk-4.1-0 | libwebkit2gtk-4.0-37",
+          "libgtk-3-0"
+        ]
+      }
     },
     "windows": {
       "certificateThumbprint": null,
       "digestAlgorithm": "sha256",
-      "timestampUrl": ""
-    },
-    "nsis": {
-      "languages": ["English"],
-      "displayLanguageSelector": false,
-      "installerIcon": "icons/icon.ico"
+      "timestampUrl": "",
+      "nsis": {
+        "languages": ["English"],
+        "displayLanguageSelector": false,
+        "installerIcon": "icons/icon.ico"
+      }
     }
   }
 }

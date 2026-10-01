@@ -36,7 +36,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -60,8 +60,8 @@ jobs:
       - name: Install project dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Build Web Frontend Assets
-        run: pnpm run build:web
+      - name: Build Workspace & Web Frontend
+        run: pnpm run build
 
       - name: Build & Publish Release Artifacts to GitHub
         uses: tauri-apps/tauri-action@v0

@@ -6,7 +6,7 @@
   "build": {
     "beforeDevCommand": "pnpm --filter @deepseek-ai/dsh-web-frontend run dev",
     "devUrl": "http://localhost:5173",
-    "beforeBuildCommand": "pnpm run build:web",
+    "beforeBuildCommand": "",
     "frontendDist": "../apps/web/dist"
   },
   "app": {
